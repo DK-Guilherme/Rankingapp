@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@0,300;0,700;0,900;1,100;1,300;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700&family=Oswald:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,600;0,700;1,100;1,400&display=swap');
+
+:root {
+  --main-font: 'Poppins', sans-serif;
+  --titles: 'Oswald', sans-serif;
+
+  --background: #212121;
+  --pink: #CB0C6C;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #212121;
+  font-family: var(--main-font);
+  color: white;
+}

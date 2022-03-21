@@ -1,0 +1,26 @@
+
+<div class="container">
+
+  <div class="anime__card" *ngFor="let anime of animeList">
+    <div class="image__title">
+      <div class="animes__card-image__container">
+        <img [src]="anime.image">
+        <p> {{anime.sinopse}} </p>
+      </div>
+      <h3 class="anime-card__title">{{anime.title }} </h3>
+    </div>
+    <div class="rest">
+      <p> score: {{anime.score}} </p>
+      <img src="../../../../assets/images/star-full.svg">
+      <img src="../../../../assets/images/star-full.svg">
+      <img src="../../../../assets/images/star-half.svg">
+      <img src="../../../../assets/images/star-empty.svg">
+      <img src="../../../../assets/images/star-empty.svg"><br>
+      <i class="pi pi-check"></i>
+      <i class="pi pi-times"></i>
+      <button pButton type="button" icon="pi pi-check" iconPos="left"></button>
+    </div>
+  </div>
+
+</div>
+

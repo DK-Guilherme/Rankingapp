@@ -1,0 +1,24 @@
+<p>home works!</p>
+<div class="cadastro">
+  <div class="card__signup">
+    <label for="email">Email</label>
+    <input type="text" id="email">
+    <label for="pass">Password</label>
+    <input type="text" id="pass">
+    <label for="name">Nome</label>
+    <input type="text" id="name">
+    <button>Cadastro</button>
+  </div>
+  <form [formGroup]="form" (submit)="getUser()">
+    <div class="card__signup">
+      <label for="email">Email</label>
+      <input type="text" id="email" formControlName="email">
+      <label for="pass">Password</label>
+      <input type="text" id="pass" formControlName="password">
+      <input type="submit">
+    </div>
+  </form>
+
+
+</div>
+
