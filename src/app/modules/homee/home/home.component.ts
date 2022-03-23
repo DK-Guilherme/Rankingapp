@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormControlName, FormGroup } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from '../../../core/services/user.service';
 import { User } from '../../../models/user.model';
@@ -25,25 +25,22 @@ export class HomeComponent implements OnInit {
       email: new FormControl(''),
       password: new FormControl(''),
     });
+    console.log(this.form.value)
   }
 
   getUser() {
-    // return this.service.getUserByemail(this.form.get(email).subscribe({
-      // next: (user) => {
-        // this.user = user;
-        // console.log(this.user);
-      // },
-    // });
-
-    console.log(this.form);
+    console.log(this.form.value);
+    return this.service.getUserByemail(this.form.value).subscribe({
+      next: (user:User) => {
+        this.user = user;
+        console.log(this.user);
+      }
+    });
   }
 
   send(): void {
     console.log(this.form);
     //if (this.form == getail())
   }
-}
-function email(email: any) {
-  throw new Error('Function not implemented.');
-}
 
+}

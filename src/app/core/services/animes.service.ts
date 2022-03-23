@@ -13,6 +13,11 @@ export class AnimesService {
   constructor(private http: HttpClient) { }
 
   public getAll(): Observable<Animes[]> {
-    return this.http.get<Animes[]>(`${this.apiUrl}/animesList`)
+    return this.http.get<Animes[]>(`${this.apiUrl}/animesList`);
   }
+
+  public getById(id: number): Observable<Animes> {
+    return this.http.get<Animes>(`${this.apiUrl}/animesList/${id}`);
+  }
+
 }

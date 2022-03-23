@@ -12,8 +12,8 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  public getUserByemail(email:string): Observable<User> {
-    return this.http.get<User>(`${this.apiUrl}/user?email=${email}`);
+  public getUserByemail(login: {email: string, password: string}): Observable<User> {
+    return this.http.get<User>(`${this.apiUrl}/user?email=${login.email}&password=${login.password}`);
   }
 
   //public emailValidat(getUserById(), user.email)

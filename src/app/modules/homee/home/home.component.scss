@@ -1,13 +1,20 @@
 .cadastro {
   display: flex;
-  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  height: 70vh;
+  background-color: #333;
+  margin: auto;
+  border-radius: 10px;
 }
 
 .card__signup {
-  margin: auto;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 10px;
+  border-radius: 8px;
+  color: black;
+  background-color: #CB0C6C;
 }

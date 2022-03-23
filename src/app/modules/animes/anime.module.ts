@@ -6,11 +6,13 @@ import { AnimeListComponent } from './anime-list/anime-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import {ButtonModule} from 'primeng/button';
+import { AnimeScoreComponent } from './anime-score/anime-score.component';
 
 
 @NgModule({
   declarations: [
-    AnimeListComponent
+    AnimeListComponent,
+    AnimeScoreComponent
   ],
   imports: [
     CommonModule,
