@@ -1,4 +1,3 @@
-
 <div class="container">
 
   <div class="anime__card" *ngFor="let anime of animeList">
@@ -20,7 +19,7 @@
       </div>
       <div class="anime-card__content-buttons">
         <button pButton type="button" icon="pi pi-heart" iconPos="left"></button>
-        <button pButton type="button" icon="pi pi-check" iconPos="left"></button>
+        <button routerLink="review/id" pButton type="button" icon="pi pi-pencil" iconPos="left"></button>
       </div>
 
     </div>
